@@ -1,0 +1,111 @@
+
+*{box-sizing: border-box;margin:0;padding:0;}
+body{margin:0;padding:0}
+
+.wrap{
+    min-width: 1600px;
+    min-height: calc(100vh - 48px);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Noto Sans KR, Malgun Gothic, Apple SD Gothic NEO, gulim, dotum, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+    word-wrap: break-word;
+    color: #555;
+}
+.classContainer h1{
+    font-family:NanumMyeongjo;
+}
+.classContainer{
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    height: 1400px;
+    
+}
+.classBox{
+    position:relative;
+    width:33.33%;
+    height:33.33%;
+}
+#warrior{
+    background-image: url("/images/bg_index_warrior.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.mainClassName{
+    text-align: center;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,0);
+    bottom:50px;
+    color:white;
+}
+#warrior .mainClassName::before{
+    width:79px;
+    height:58px;
+    background-image: url("/images/mark-warrior.png");
+    content:'';
+    position:absolute;
+    left:50%;
+    bottom:50px;
+    transform: translate(-50%,0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index:2;
+}
+.mainClassName::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    bottom:50px;
+    transform: translate(-50%,0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index:2;
+}
+#warrior .classInnerBox{
+    width:100%;
+    height:100%;
+    background-image: url("/images/img_index_warrior.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* position:relative; */
+}
+.classInnerBox > *{display:none;}
+.classInnerBox:hover > *{
+    display:block;
+}
+.classInnerBox:hover{
+    background-color: #252f3e;;
+    background-image: none !important;
+    position:relative;
+
+}
+.classTitle{
+    margin:0;
+    position: absolute;
+    top: 128px;
+    bottom: auto;
+    left: 70px;
+    padding: 0;
+    text-align: left;
+    font-size: 32px;
+    padding-left: 61px;
+    color:white;
+}
+#warrior .classTitle::before{
+    top: -6px;
+    width: 51px;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    transform: translateX(0);
+    background-image: url("/images/mark-warrior.png");
+    content:"";
+    bottom: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
