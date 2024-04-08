@@ -21,6 +21,7 @@ body{margin:0;padding:0}
     display:flex;
     flex-wrap: wrap;
     height: 1400px;
+    align-content: flex-start;
     
 }
 .classBox{
@@ -85,7 +86,8 @@ body{margin:0;padding:0}
     width:100%;
     height:100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
+    background-position: 50% bottom;
     /* position:relative; */
 }
 
@@ -167,20 +169,23 @@ body{margin:0;padding:0}
 
 /* 직업별 */
 /* 전사 */
+    /* 배경 */
     #warrior{
-        background-image: url("../../images/warrior/bg_index_warrior.jpg");
+        background-image: url("../../images/warrior/bg_index_warrior.jpg"); 
         background-repeat: no-repeat;
         background-size: 100% 100%;
         
     }
+    /* 호버 마크 */
     #warrior .classTitle::before{
         background-image: url("/images/warrior/mark-warrior.png");
 
     }
+    /* 캐릭터이미지 */
     #warrior .classInnerBox{
         background-image: url("/images/warrior/img_index_warrior.png");
     }
-
+    /* 메인직업 마크 */
     #warrior .mainClassName::before{
         background-image: url("/images/warrior/mark-warrior.png");
     }
@@ -206,12 +211,14 @@ body{margin:0;padding:0}
     }
 
 /* 여전사 */
+    /* 배경 */
     #warriorF{
         background-image: url("/images/warriorF/bg_index_warrior_female.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         
     }
+    /* 호버 마크 */
     #warriorF .classTitle::before{
         top: -13px;
         width: 44px;
@@ -219,10 +226,11 @@ body{margin:0;padding:0}
         background-image: url("/images/warriorF/mark-warrior-female.png");
 
     }
+    /* 캐릭터이미지 */
     #warriorF .classInnerBox{
         background-image: url("/images/warriorF/img_index_warrior_female.png");
     }
-
+    /* 메인직업 마크 */
     #warriorF .mainClassName::before{
 
         width: 55px;
@@ -232,5 +240,41 @@ body{margin:0;padding:0}
     /* 슬레이어 */
     #warriorF li:nth-child(1) a::before{
         background-image: url("/images/warriorF/mark-slayer-border.png");
+
+    }
+/* 남무도가 */
+    /* 배경 */
+    #fighter{
+        background-image: url("/images/fighter/bg_index_fighter_male.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+    }
+    /* 호버 마크 */
+    #fighter .classTitle::before{
+        top: -8px;
+        width: 43px;
+        height: 42px;
+        background-image: url("/images/fighter/mark-fighter_male.png");
+
+    }
+    /* 캐릭터이미지 */
+    #fighter .classInnerBox{
+        background-image: url("/images/fighter/img_index_fighter_male.png");
+    }
+    /* 메인직업 마크 */
+    #fighter .mainClassName::before{
+        width: 60px;
+        height: 59px;
+        background-image: url("/images/fighter/mark-fighter_male.png");
+    }
+    /* 스트라이커 */
+    #fighter li:nth-child(1) a::before{
+        background-image: url("/images/warriorF/mark-slayer-border.png");
+
+    }
+    /* 브레이커 */
+    #fighter li:nth-child(2) a::before{
+        background-image: url("/images/fighter/mark-Breaker-border.png");
 
     }
